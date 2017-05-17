@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rooms</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="config.js"></script>
+</head>
+<style type="text/css">
+	body{
+		position: absolute;
+	}
+	p{
+		background-color: black;
+		color: white; 
+		position: relative;
+		display: inline-block;
+	}
+</style>
+<body>
+	<h1>Oak</h1>
+	<button onclick="getHotels('oak',1,7)">1</button> <button onclick="getHotels('oak',8,14)">2</button>
+	<div class="header">
+		<p  style="left: 80px;">1</p>
+		<p 	style="left: 160px;">2</p>
+		<p 	style="left: 240px;">3</p>
+		<p  style="left: 320px;">4</p>
+		<p  style="left: 400px;">5</p>
+		<p  style="left: 480px;">6</p>
+		<p  style="left: 560px;">7</p>
+	</div>
+	<div class="content">
+		<div id="1">
+		</div>
+		<div id="2">
+		</div>
+	</div>
+
+	<h1>Maple</h1>
+	<div id="3"></div>
+	<div id="4"></div>
+	<div id="5"></div>
+</body>
+</html>
