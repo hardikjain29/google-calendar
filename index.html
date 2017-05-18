@@ -1,36 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Rooms</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="config.js"></script>
 </head>
-<style type="text/css">
-	body{
-		position: absolute;
-	}
-	.content{
-		position: relative;
-		box-sizing: border-box;
-		float: left;
-	}
-	p{
-		position: relative;
-		display: inline-block;
-	}
-	.booked{
-		background-color: black;
-		color: white; 
-		text-align: center;
-		border-radius: 20px;
-		height: 35px;
-		padding-top: 10px;
-	}
 
-	.type{
-		margin-top: 100px;
-	}
-</style>
 <body>
 	<h1 class="type">Oak</h1>
 	<button onclick="getHotels('oak',1,7)">1</button> <button onclick="getHotels('oak',8,14)">2</button>
@@ -41,7 +18,7 @@
 			<p style="left: 100px;">1</p>
 		</div>
 		<div id="2">
-			<p style="left: 100px;">2</p>		
+			<p style="left: 100px;">2</p>
 		</div>
 	</div>
 
@@ -49,16 +26,17 @@
 	<button onclick="getHotels('maple',1,7)">1</button> <button onclick="getHotels('maple',8,14)">2</button>
 	<div class="maple-header header">
 	</div>
-	<div class="content">	
+	<div class="content">
 		<div id="3">
-			<p style="left: 100px;">3</p>			
+			<p style="left: 100px;">3</p>
 		</div>
 		<div id="4">
-			<p style="left: 100px;">4</p>			
+			<p style="left: 100px;">4</p>
 		</div>
 		<div id="5">
 			<p style="left: 100px;">5</p>
-		</div>		
+		</div>
 	</div>
 </body>
+
 </html>
