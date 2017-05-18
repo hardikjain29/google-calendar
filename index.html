@@ -3,39 +3,46 @@
 
 <head>
 	<title>Rooms Booked</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="config.js"></script>
 </head>
 
 <body>
-	<h1 class="type">Oak</h1>
-	<button onclick="getHotels('oak',1,7)">1</button> <button onclick="getHotels('oak',8,14)">2</button>
-	<div class="oak-header header">
-	</div>
-	<div class="content">
-		<div id="1">
-			<p style="left: 100px;">1</p>
-		</div>
-		<div id="2">
-			<p style="left: 100px;">2</p>
-		</div>
-	</div>
-
-	<h1 class="type">Maple</h1>
-	<button onclick="getHotels('maple',1,7)">1</button> <button onclick="getHotels('maple',8,14)">2</button>
-	<div class="maple-header header">
-	</div>
-	<div class="content">
-		<div id="3">
-			<p style="left: 100px;">3</p>
-		</div>
-		<div id="4">
-			<p style="left: 100px;">4</p>
-		</div>
-		<div id="5">
-			<p style="left: 100px;">5</p>
-		</div>
+	<div class="container">
+		<select class="type">
+			<option value="oak">Oak</option>
+			<option value="maple">Maple</option>
+		</select>
+		<select class="week">
+			<option value="1,7">1st Week</option>
+			<option value="8,14">2nd Week</option>
+		</select>
+		<button onclick="getHotels()"> Go! </button>
+			<div class="main">
+			<div class="typeHeading">
+			</div>
+			<div class="header">
+			</div>
+			<div class="content">
+				<div id="1">
+					<p>1</p>
+				</div>
+				<div id="2">
+					<p>2</p>
+				</div>
+				<div id="3">
+					<p>3</p>
+				</div>
+				<div id="4">
+					<p>4</p>
+				</div>
+				<div id="5">
+					<p>5</p>
+				</div>
+			</div>
+			</div>
 	</div>
 </body>
 

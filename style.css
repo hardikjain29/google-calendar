@@ -1,13 +1,13 @@
-body{
-	position: absolute;
+.container {
+	width: 1024px;
+	margin: 0 auto;
 }
+
 .content{
 	position: relative;
-	box-sizing: border-box;
-	float: left;
+	width: 100%;
 }
 p{
-	position: relative;
 	display: inline-block;
 }
 .booked{
@@ -17,8 +17,14 @@ p{
 	border-radius: 20px;
 	height: 35px;
 	padding-top: 10px;
+	position: absolute;
 }
 
 .type{
 	margin-top: 100px;
+}
+
+.header{
+	position: relative;
+	width: 100%;
 }
