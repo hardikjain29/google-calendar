@@ -15,7 +15,7 @@ function getHotels(type, start, end) {
             header = `
 									<p  style="left: 100px;">Room Number</p>
 									<p 	style="left: 200px;">1</p>
-									<p 	style="left: 300px;">2</p>
+									<p 	style="left: 300px;">2</p> 
 									<p  style="left: 400px;">3</p>
 									<p  style="left: 500px;">4</p>
 									<p  style="left: 600px;">5</p>
