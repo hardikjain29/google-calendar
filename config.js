@@ -13,6 +13,10 @@ function incrementWeek() {
 }
 
 function decrementWeek() {
+  if(week - 1 === -1){
+    alert('Cannot go below this');  // Alert to not allow below date 1
+    return;
+  }
   week = week - 1;
   const start = (numberOfDaysToDisplay * week) + 1;
   getHotels(numberOfDaysToDisplay, start);
@@ -27,7 +31,7 @@ function getHotels(numberOfDaysToDisplay, start) {
   $('.booked, .header p, .typeHeading h1').remove(); // Remove the previous content before inserting new one.
   $.ajax({
     url: "http://www.mocky.io/v2/591596dc100000b9027595b1",
-    cache: false,
+    cache: true,
     dataType: "json"
   }).done(function (data) {  // Logic inside the done method as suggested
 
